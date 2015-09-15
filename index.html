@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<body>
+
+	<div ng-app="">
+		<p>Name : <input type="text" ng-model="name"></p>
+		<p>Address : <input type="text" ng-model="address"></p>
+		<p>City : <input type="text" ng-model="city"> | State : <input type="text" ng-model="state"> | Zip : <input type="text" ng-model="zip"></p>
+
+		<h3>Mailing Address:</h3>
+		<p>
+			{{name}} <br>
+			{{address}} <br>
+			{{city}} {{state}} {{zip}} <br>
+
+		</p>
+
+		<p>FirstNum : <input type="number" ng-model="num1"></p>
+		<p>SecondNum : <input type="number" ng-model="num2"></p>
+		{{num1}} {{num2}} <br>
+		{{ total = num1 + num2 }}
+	</div>
+
+</body>
+</html>
